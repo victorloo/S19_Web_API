@@ -14,10 +14,7 @@ class Api::V1::AuthController < ApiController
         user_id: user.id
       }
     else
-      render json: {
-        message: "Email or Password is wrong",
-        status: 401
-      }
+      render json: { message: "Email or Password is wrong" }, status: 401
     end
     
   end
