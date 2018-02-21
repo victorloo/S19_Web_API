@@ -1,4 +1,4 @@
-class Api::V1::AuthController < ApiControllerApiController
+class Api::V1::AuthController < ApiController
   before_action :authenticate_user!, only: :logout
 
   # POST /api/v1/login
