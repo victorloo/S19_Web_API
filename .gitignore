@@ -21,3 +21,7 @@
 /yarn-error.log
 
 .byebug_history
+/public/uploads
+
+# Ignore facebook App_Id and App_Secret
+/config/facebook.yml
