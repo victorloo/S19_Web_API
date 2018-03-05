@@ -25,3 +25,6 @@
 
 # Ignore facebook App_Id and App_Secret
 /config/facebook.yml
+
+# Ignore All notes
+/wiki
