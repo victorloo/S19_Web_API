@@ -25,6 +25,11 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+# 是 Rails 預設安裝的 gem，他可以讓你：
+#高彈性地組合 template
+#在 template 裡加入條件式（如有登入沒登入看見不同資料）
+#可以拆 partial
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -34,8 +39,14 @@ gem 'carrierwave'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'jquery-rails'
 gem 'devise'
-gem 'rest-client'
-gem 'omniauth-facebook'
+gem 'rest-client' # 使用API會向http發出請求
+gem 'omniauth-facebook' 
+# OmniAuth 提供的套件，OmniAuth 幫助我們能以一個標準化的方法，來整合各種平台的開放授權。
+# 此次使用整合 fb
+# 需要在 User 上加入一些欄位，用來存放從 Facebook 來的資訊
+# 新增的欄位是︰
+# fb_uid - 你的 FB 識別碼
+# fb_token - API 認證機制裡用到的憑證
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
