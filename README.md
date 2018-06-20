@@ -1,9 +1,5 @@
 # Alpha Camp Rails習題︰Photo Album with API
 
-## 體驗方式
-* 帳號：root@example.com
-* 密碼：12345678
-
 ## 如何啟動？
 
 ```ruby
