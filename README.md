@@ -1,4 +1,4 @@
-# Alpha Camp Rails習題︰Restaurant Forum
+# Alpha Camp Rails習題︰Photo Album with API
 
 ## 體驗方式
 * 帳號：root@example.com
