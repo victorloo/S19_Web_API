@@ -1,24 +1,43 @@
-# README
+# Alpha Camp Rails習題︰Restaurant Forum
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 體驗方式
+* 帳號：root@example.com
+* 密碼：12345678
 
-Things you may want to cover:
+## 如何啟動？
 
-* Ruby version
+```ruby
+git clone git@github.com:victorloo/S19_Web_API.git
+bundle install
+rake db:migrate
+rails dev:fetch_user
+```
 
-* System dependencies
+## 開發環境
 
-* Configuration
+* Ruby version: 2.4.3
+* Rails version: 5.1.4
 
-* Database creation
+### 使用的 gem
 
-* Database initialization
+* [devise](https://rubygems.org/gems/devise)
+* [carrierwave](https://rubygems.org/gems/carrierwave)
+* [bootstrap-sass](https://rubygems.org/gems/bootstrap-sass)
+* [rest-client](https://rubygems.org/gems/rest-client)
+* [omniauth-facebook](https://rubygems.org/gems/omniauth-facebook)
 
-* How to run the test suite
+## 使用者故事
+### 照片
+* 用戶可以瀏覽所有照片
+* 用戶可以新增一筆照片
+* 用戶可以瀏覽一筆照片
+* 用戶可以修改一筆照片
+* 用戶可以上傳照片
+* 用戶可以刪除一筆照片
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### API
+* 用戶可以瀏覽照片
+* 用戶可以新增一筆照片
+* 用戶可以修改一筆照片
+* 用戶可以刪除一筆照片
+* 可以用 FB 認證來登入會員
