@@ -1,24 +1,39 @@
-# README
+# Alpha Camp Rails習題︰Photo Album with API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 如何啟動？
 
-Things you may want to cover:
+```ruby
+git clone git@github.com:victorloo/S19_Web_API.git
+bundle install
+rake db:migrate
+rails dev:fetch_user
+```
 
-* Ruby version
+## 開發環境
 
-* System dependencies
+* Ruby version: 2.4.3
+* Rails version: 5.1.4
 
-* Configuration
+### 使用的 gem
 
-* Database creation
+* [devise](https://rubygems.org/gems/devise)
+* [carrierwave](https://rubygems.org/gems/carrierwave)
+* [bootstrap-sass](https://rubygems.org/gems/bootstrap-sass)
+* [rest-client](https://rubygems.org/gems/rest-client)
+* [omniauth-facebook](https://rubygems.org/gems/omniauth-facebook)
 
-* Database initialization
+## 使用者故事
+### 照片
+* 用戶可以瀏覽所有照片
+* 用戶可以新增一筆照片
+* 用戶可以瀏覽一筆照片
+* 用戶可以修改一筆照片
+* 用戶可以上傳照片
+* 用戶可以刪除一筆照片
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### API
+* 用戶可以瀏覽照片
+* 用戶可以新增一筆照片
+* 用戶可以修改一筆照片
+* 用戶可以刪除一筆照片
+* 可以用 FB 認證來登入會員
